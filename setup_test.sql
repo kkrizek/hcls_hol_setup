@@ -1,3 +1,5 @@
+--!jinja
+
 use warehouse hol_setup_wh;
 
 set my_var = {{hol_prefix}};
