@@ -21,7 +21,7 @@ begin
 
   set lab_pwd := 'Sn@wpark!phd';
   set qry := concat('GRANT EXECUTE TASK ON ACCOUNT TO ROLE ', hol_prefix, 'XXX');
-  call hcls_hol.hol.loopquery(qry, $num_users);
+  call hcls_hol.hol.loopquery(qry, :nbr_users);
 
   return :qry;
 end;
