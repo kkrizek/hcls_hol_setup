@@ -13,5 +13,5 @@ begin
          ,hol_description  into :v_hol_description
     from hcls_hol.hol.hol_definition
    where hol_prefix = '{{hol_prefix}}';
-  return :v_hol_name, :v_hol_description;
+  return :v_hol_name;
 end;
