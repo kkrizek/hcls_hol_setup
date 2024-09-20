@@ -17,7 +17,7 @@ begin
   select hol_name, hol_description, hol_date, nbr_users, database, schema, streamlit_apps         
     into :hol_name, :hol_description, :hol_date, :nbr_users, :database, :schema, :streamlit_apps
     from hcls_hol.hol.hol_definition
-   where hol_prefix = i_hol_prefix;
+   where hol_prefix = :i_hol_prefix;
 
   set lab_pwd := 'Sn@wpark!phd';
   set qry := concat('GRANT EXECUTE TASK ON ACCOUNT TO ROLE ', i_hol_prefix, 'XXX');
