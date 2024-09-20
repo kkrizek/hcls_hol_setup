@@ -20,7 +20,7 @@ begin
 --   where hol_prefix = i_hol_prefix;
 
   set lab_pwd := 'Sn@wpark!phd';
-  set qry := 'GRANT EXECUTE TASK ON ACCOUNT TO ROLE ' + str(i_hol_prefix) + 'XXX';
+  set qry := concat('GRANT EXECUTE TASK ON ACCOUNT TO ROLE ', i_hol_prefix, 'XXX');
 
   return :qry;
 end;
