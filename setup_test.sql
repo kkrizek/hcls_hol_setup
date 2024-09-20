@@ -17,7 +17,7 @@ begin
    where hol_prefix = '{{hol_prefix}}';
 
   set lab_pwd := 'Sn@wpark!phd';
-  set qry := 'GRANT EXECUTE TASK ON ACCOUNT TO ROLE ' + {{hol_prefix}} + 'XXX';
+  set qry := 'GRANT EXECUTE TASK ON ACCOUNT TO ROLE ' + '{{hol_prefix}}' + 'XXX';
 
   return :qry;
 end;
