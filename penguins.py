@@ -11,7 +11,8 @@ selected_x_var = st.selectbox('What do want the x variable to be?',
 selected_y_var = st.selectbox('What about the y?', 
   ['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm', 'body_mass_g']) 
  
-penguin_file = st.file_uploader('Select Your Local Penguins CSV') 
+#penguin_file = st.file_uploader('Select Your Local Penguins CSV') 
+penguin_file = "penguins.csv"
 if penguin_file is not None: 
 	penguins_df = pd.read_csv(penguin_file) 
 else: 
